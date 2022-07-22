@@ -1,108 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Button</title>
-    <style>
-        .group {
-            display:flex;
-            flex-wrap: wrap;
-        }
-        .btn {
-            width:300px;
-            height: 40px;
-            background-color: #666cff;
-            border: 0;
-            border-radius: 30px;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            border: 1px solid #666cff;
-            background-color: burlywood;
-        }
-        .item {
-            width:300px;
-            height: 600px;
-            border-radius: 30px;
-            padding-top: 25px;
-            padding-left: 75px;
-            padding-right: 75px;
-        }
-        .item:hover {
-            box-shadow: 3px 10px 10px rgba(17, 0, 255, 0.3);
-        }
-        .item-img {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            border-radius: 30px;
-            width: 300px;
-            height: 300px;
-            background-color: rgb(143, 179, 211);
-        }
-        .item-title {
-            text-align: center;
-            font-size: 12px;
-            margin-bottom: 30px;
-        }
-    </style>
+    <title>
+        Форма регистрации
+    </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="group">
-    <div class="item">
-        <div class="item-img">
-            <img>
+    <div class="content">
+        <h2>Регистрация</h2>
+        <form action="">
+        <div class="textbox">
+            <input type="text" name="first_name" placeholder="Имя" style="background-color: rgb(222, 241, 180)" width="900px;">
         </div>
-        <div class="item-title">
-            Text 1
+        <div class="textbox">
+            <input type="text" name="last_name" placeholder="Фамилия" style="background-color: rgb(222, 241, 180)">
         </div>
-        <div class="item-footer">
-            <button class="btn">Select</button>
+        <div class="textbox">
+            <input type="text" name="email" placeholder="E-mail" style="background-color: rgb(222, 241, 180)">
         </div>
-    </div>
-    <div class="item">
-        <div class="item-img">
-            <img>
+        <div class="textbox">
+            <input type="text" name="Password" placeholder="Пароль" style="background-color: rgb(222, 241, 180)">
         </div>
-        <div class="item-title">
-            Text 2
+        <div class="textbox">
+            <input type="text" name="Password_ver" placeholder="Повторите пароль" style="background-color: rgb(222, 241, 180)">
         </div>
-        <div class="item-footer">
-            <button class="btn">Select</button>
+
+        <div> <button class="btn">
+            <a href="registred.html">Завершить регистрацию</a>
+            </button>
         </div>
-    </div>
-    <div class="item">
-        <div class="item-img">
-            <img>
-        </div>
-        <div class="item-title">
-            Text 3
-        </div>
-        <div class="item-footer">
-            <button class="btn">Select</button>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item-img">
-            <img>
-        </div>
-        <div class="item-title">
-            Text 1
-        </div>
-        <div class="item-footer">
-            <button class="btn">Select</button>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item-img">
-            <img>
-        </div>
-        <div class="item-title">
-            Text 1
-        </div>
-        <div class="item-footer">
-            <button class="btn">Select</button>
-        </div>
-    </div>
+        </form>
     </div>
 </body>
+
 </html>
